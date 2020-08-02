@@ -3,9 +3,9 @@ jdk:
 -openjdk8
 
 addons:
- sonarcloud:
-  organization: jevering
-  token: 7041fd23d2c120b7cc0ffd53738de3ab4c1993ed
+	sonarcloud:
+		organization: jevering
+		token: 7041fd23d2c120b7cc0ffd53738de3ab4c1993ed
 script:
 -ant build
 -sonar-scanner
