@@ -5,8 +5,7 @@ jdk:
 addons:
   sonarcloud:
     organization: "jevering"
-    token:
-      secure: "7041fd23d2c120b7cc0ffd53738de3ab4c1993ed" # encrypted value of your token
+    token: "7041fd23d2c120b7cc0ffd53738de3ab4c1993ed"
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
