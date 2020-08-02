@@ -5,9 +5,9 @@ jdk:
 addons:
   sonarcloud:
     organization: jevering
-    token: 7041fd23d2c120b7cc0ffd53738de3ab4c1993ed
+    token: 
+      secure: 7041fd23d2c120b7cc0ffd53738de3ab4c1993ed
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
   - ant build
   - sonar-scanner
